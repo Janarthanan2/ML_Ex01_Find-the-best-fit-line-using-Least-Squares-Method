@@ -27,15 +27,9 @@ RegisterNumber:  212222230051
 import numpy as np
 import matplotlib.pyplot as plt
 
-x=[5,6,3,2,6,7,1,2]
-y=[2,3,6,5,8,3,5,8]
-plt.scatter(x,y);
-plt.plot(x,y)
-plt.show()
-
 ## ASSIGNING INPUT
-X=np.array([0,1,2,3,4,5,6,7,8,9])
-Y=np.array([1,3,2,5,7,8,8,9,10,12])
+X=np.array(eval(input()))
+Y=np.array(eval(input()))
 
 ## MEAN VALUES OF INPUT
 X_mean=np.mean(X)
@@ -67,11 +61,6 @@ plt.show()
 ```
 
 ## OUTPUT:
-- **Before**
-  <div align="left">
-    <img src="https://github.com/Janarthanan2/ML_Ex01_Find-the-best-fit-line-using-Least-Squares-Method/assets/119393515/f25dea6a-e3e2-4359-8648-5f3f9c980c39" height="250" width="250">
-  </div>
-- **After**
   <div align="left">
     <img src="https://github.com/Janarthanan2/ML_Ex01_Find-the-best-fit-line-using-Least-Squares-Method/assets/119393515/2cdd06b1-9fdb-43e0-966f-29633885dc67" height="250" width="250">
   </div>
