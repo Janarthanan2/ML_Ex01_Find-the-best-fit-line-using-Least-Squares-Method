@@ -28,41 +28,41 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 ## ASSIGNING INPUT
-X=np.array(eval(input()))
-Y=np.array(eval(input()))
+X=np.array(eval(input("Enter the x-Values: ")))
+Y=np.array(eval(input("Enter the y-Values: ")))
 
 ## MEAN VALUES OF INPUT
 X_mean=np.mean(X)
-print(X_mean)
+print("x_mean:",X_mean)
 Y_mean=np.mean(Y)
-print(Y_mean)
+print("y_mean:", Y_mean)
 num=0
 denum=0
 for i in range (len(X)):
   num+=(X[i]-X_mean)*(Y[i]-Y_mean)
   denum+=(X[i]-X_mean)**2
-  
+
 ## FIND THE SLOPE
 m=num/denum
-print(m)
+print("Slope:",m)
 
 ## FIND THE Y-INTERCEPT
 b=Y_mean-m*X_mean
-print(b)
+print("y-Intercept:",b)
 
 ## FIND Y_pred
 Y_pred=m*X+b
-print(Y_pred)
+print("y_predicted:",Y_pred)
 
 ## PLOT GRAPH
 plt.scatter(X,Y)
 plt.plot(X,Y_pred,color='orange')
-plt.show()  
+plt.show() 
 ```
 
 ## OUTPUT:
     
-<img src="https://github.com/Janarthanan2/ML_Ex01_Find-the-best-fit-line-using-Least-Squares-Method/assets/119393515/04c0acaf-f965-455f-8a9c-74b053173bcb" width=50%>
+<img src="https://github.com/Janarthanan2/ML_Ex01_Find-the-best-fit-line-using-Least-Squares-Method/assets/119393515/e18950a9-e08c-420f-a422-59e1537725e8" width=50%>
     
 ## RESULT:
 Thus the univariate Linear Regression was implemented to fit a straight line using least squares using python programming.
